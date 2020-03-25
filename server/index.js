@@ -3,7 +3,7 @@ const app = express();
 const path = require('path');
 const axios = require('axios');
 const bodyParser = require('body-parser');
-const companyNumber = 10; // this is how many companies there are;
+const companyNumber = 1; // this is how many companies there are;
 const controller = require('./controller.js');
 const port = 3000;
 
@@ -27,11 +27,11 @@ app.get('/getPhotos', (req, res) => {
 })
 
 app.get('/arrow.png', (req, res) => {
-    res.sendFile('/Users/alexchung/Documents/HackReactor2020/popular-dishes/server/arrow.png');
+    res.sendFile('/Users/kelsyvaughn/Documents/Hack Reactor/firtsHalfOfCourse/Course/popular-dishes/server/arrow.png');
 });
 
 app.get('/leftarrow.png', (req, res) => {
-    res.sendFile('/Users/alexchung/Documents/HackReactor2020/popular-dishes/server/leftarrow.png');
+    res.sendFile('/Users/kelsyvaughn/Documents/Hack Reactor/firtsHalfOfCourse/Course/popular-dishes/server/leftarrow.png');
 });
 
 app.get('/getReviews', (req, res) => {

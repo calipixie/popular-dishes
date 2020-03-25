@@ -1,17 +1,17 @@
 const aws = require('aws-sdk');
-const config = require('../config.json');
+const config = require('/Users/kelsyvaughn/Documents/Hack Reactor/firtsHalfOfCourse/Course/popular-dishes/config.json');
 const db = require('./index.js');
 const faker = require('faker');
 const axios = require('axios');
 
 // how many companies do we want to be made
-const numberOfCompanies = 10;
+const numberOfCompanies = 1;
 
 // maxDishes in a company
 var maxDishes = 9;
 
 // Max number of reviews per dish
-var maxReviews = 100;
+var maxReviews = 10;
 
 // max number of photos per dish
 var maxPhotos = 20;
